@@ -16,4 +16,9 @@ In this project we seek to:
 
 * **Data Preprocessing:**   Dropped dependent and non predictive attributes. Some missing values were filled by a mean value using Imputer from sklearn.preprocessing. Lastly standardized the features by removing the mean and scaling to unit variance.
 * **Experimentation:**   To familiarize ourselves with the dataset we used scatter plot to see the relationship between some attributes and Violent Crimes Per Population Attribute, which is our Goal Attribute. For example, Percentage of divorced males shows that low percentage of people in this age bracket corresponds with higher Violent Crimes.
-* 
+![image](Picture5.png)
+
+* **Prediction:**  We used Linear Regression, Support Vector Regression, Decision Tree Regression, Random Forest Regression models and implemented Cross Validation on them. From Cross Validation scores, we saw that Linear Regression has the best performance among the analyzed models and will be used for generalization.
+
+![image](Picture6.png)
+* **Result:** Feature ranking with recursive feature elimination showed to be the best method analyzed to select predictors of ViolentCrimesPerPop. The best generalization on the test set was obtained using a robust linear regression estimator (RANSAC).
